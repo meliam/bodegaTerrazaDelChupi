@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Inicio Bodega Terraza Del Chupi</h1>
+
+<p>Bienvenido a <em>Terraza Del Chupi</em>, un sitio web básico de Django desarrollado como tutorial de ejemplo para MITIC.</p>
+
+<h2>Contenido Dinámico</h2>
+
+<p>La bodega tiene los siguientes registros contados</p>
+  <ul>
+    <li><strong>Bebidas:</strong> {{ num_bebidas }}</li>
+    <li><strong>Pedidos:</strong> {{ num_pedidos }}</li>
+    <li><strong>Bebidas Disponibles:</strong> {{ num_bebidas_disponibles }}</li>
+  </ul>
+
+{% endblock %}
